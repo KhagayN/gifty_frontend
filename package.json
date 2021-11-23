@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "http://khagayn.github.io/khagayn.github.io",
+  "homepage": "http://khagayn.github.io/website",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
