@@ -7,9 +7,26 @@ class App extends Component {
   //Define Survey JSON
   //Here is the simplest Survey with one text question
   json = {
-   elements: [
-    { type: "text", name: "customerName", title: "What is your name?", isRequired: true}
-   ]
+   elements: 
+   [
+    { type: "text", name: "dadName", title: "What is your dad's name?", isRequired: true},
+    { type: "checkbox", name: "shopFrequency", title: "How often does your dad shop?", isRequired: true, 
+      choices: ["All the time", "My mom shops for him", "Never", "Complete Functionality"]},
+   { type: "text", name: "dadAge", title: "How old is your dad?", isRequired: true },
+   { type: "text", name: "dadHomeland", title: "Where is your dad from?", isRequired: true },
+   { type: "checkbox", name: "dadTechSavy", title: "Is your dad tech savy?", isRequired: true,
+      choices: ["Yes", "No"]},
+   { type: "checkbox", name: "dadWorkPlace", title: "Does your dad work from home?", isRequired: true,
+      choices: ["Yes", "No"]},
+   { type: "checkbox", name: "dadBluetooth", title: "Does your dad have bluetooth headphones?", isRequired: true,
+      choices: ["Yes", "No"]},
+   { type: "checkbox", name: "dadHealthCareWatch", title: "Does your dad have an electronic health care watch?", isRequired: true,
+      choices: ["Yes", "No"]},
+   { type: "checkbox", name: "dadWorkout", title: "Does your dad like working out?", isRequired: true,
+      choices: ["Yes", "No"]},
+   { type: "checkbox", name: "dadGlasses", title: "Does your dad wear glasses?", isRequired: true,
+      choices: ["Yes", "No"]},
+    ]
   };
  
   //Define a callback methods on survey complete
