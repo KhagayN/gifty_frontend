@@ -3,6 +3,8 @@ import * as Survey from "survey-react";
 import Amazon from "./Amazon";
 
 class Form extends Component {
+    gifty_backend_url = "https://gifty-backend.ue.r.appspot.com"
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -50,7 +52,7 @@ class Form extends Component {
         if (this.state.isSubmitted){
             return(<Amazon/>)
         } else {
-            return (<Survey.Survey model={model} onComplete={this.onComplete}/>)
+            return (<div style={{'text-align':'center'}}><Survey.Survey model={model} onComplete={this.onComplete}/></div>)
         }        
     }
 }
